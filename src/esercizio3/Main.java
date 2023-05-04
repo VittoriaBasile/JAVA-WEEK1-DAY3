@@ -13,9 +13,9 @@ public class Main {
           String input = "";
 
 	          while (!input.contains(":q")) {
-	              System.out.println("Inserisci una stringa (per uscire digita ':q'): ");
+	              System.out.println("Inserisci una parola");
 	              input = scanner.nextLine();
-	              if (!input.contains(":q")) {
+	              if (!input.equals(":q")) {
 	                  String[] chars = input.split("");
 	                  for (String c : chars) {
 	                      System.out.print(c + ",");
